@@ -31,6 +31,3 @@ Id: practitioner-nationality
 * extension[period].value[x] ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
 * extension[period].value[x] ^extension[=].valueCode = #4.0.0
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-nationality" (exactly)
-* value[x] N
-* value[x] ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
-* value[x] ^extension[=].valueCode = #4.0.0

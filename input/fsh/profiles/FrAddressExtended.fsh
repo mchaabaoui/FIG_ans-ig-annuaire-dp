@@ -21,10 +21,10 @@ Id: fr-address-extended
 * line.extension ^slicing.rules = #open
 
 * line.extension contains
-    iso21090-ADXP-careOf named careOf and 
-    iso21090-ADXP-additionalLocator named additionalLocator and
-    iso21090-ADXP-houseNumber named houseNumber and
-    iso21090-ADXP-buildingNumberSuffix named buildingNumberSuffix and
-    iso21090-ADXP-streetNameType named streetNameType and 
-    iso21090-ADXP-streetNameBase named streetNamebase and
-    iso21090-ADXP-postBox named postBox
+    iso21090-ADXP-careOf named careOf 0..* and 
+    iso21090-ADXP-additionalLocator named additionalLocator 0..* and
+    iso21090-ADXP-houseNumber named houseNumber 0..* and
+    iso21090-ADXP-buildingNumberSuffix named buildingNumberSuffix 0..* and
+    iso21090-ADXP-streetNameType named streetNameType 0..* and 
+    iso21090-ADXP-streetNameBase named streetNamebase 0..* and
+    iso21090-ADXP-postBox named postBox 0..*

@@ -29,10 +29,10 @@ Id: rass-practitioner-bundle
 * entry[organization].resource.extension ^slicing.discriminator.type = #value
 * entry[organization].resource.extension ^slicing.discriminator.path = "url"
 * entry[organization].resource.extension ^slicing.rules = #open
-* entry[organization].resource.extension contains
-    usePeriod 0..0 and
-    pharmacyLicence 0..0 and
-    digitalCertificate 0..0 and
-    mailboxMSS 0..0
+* entry[organization].resource.extension[usePeriod] 0..0
+* entry[organization].resource.extension[pharmacyLicence] 0..0
+* entry[organization].resource.extension[digitalCertificate] 0..0
+* entry[organization].resource.extension[mailboxMSS] 0..0
+
 * entry[organization].resource.type ..0
 * entry[organization].resource.partOf ..0

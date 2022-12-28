@@ -29,9 +29,9 @@ Id: rass-organization
 * identifier.use = #official (exactly)
 
 * type contains
-    organizationActivityField and
-    activiteINSEE and
-    statutJuridiqueINSEE and
+    organizationActivityField 0..* and
+    activiteINSEE 0..* and
+    statutJuridiqueINSEE 0..* and
     CategorieEtablissement 0..* and
     SPH 0..*
 
