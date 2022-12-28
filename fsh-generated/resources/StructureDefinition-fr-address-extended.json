@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fr-address-extended",
+  "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/fr-address-extended",
+  "version": "0.1.0",
+  "name": "FrAddressExtended",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Address",
+  "baseDefinition": "http://interopsante.org/fhir/StructureDefinition/FrAddress",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Address.extension:frenchDepartment",
+        "path": "Address.extension",
+        "sliceName": "frenchDepartment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.extension:countryCode",
+        "path": "Address.extension",
+        "sliceName": "countryCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:careOf",
+        "path": "Address.line.extension",
+        "sliceName": "careOf",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:additionalLocator",
+        "path": "Address.line.extension",
+        "sliceName": "additionalLocator",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:houseNumber",
+        "path": "Address.line.extension",
+        "sliceName": "houseNumber",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:buildingNumberSuffix",
+        "path": "Address.line.extension",
+        "sliceName": "buildingNumberSuffix",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:streetNameType",
+        "path": "Address.line.extension",
+        "sliceName": "streetNameType",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:streetNamebase",
+        "path": "Address.line.extension",
+        "sliceName": "streetNamebase",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:postBox",
+        "path": "Address.line.extension",
+        "sliceName": "postBox",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

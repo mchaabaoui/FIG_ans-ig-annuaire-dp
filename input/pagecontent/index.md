@@ -1,10 +1,6 @@
 ### Introduction
 
-Il s'agit d'un exemple d'Implementation Guide de l'ANS, à prendre comme base pour créer de nouveaux IGs. 
-
-Selon la documentation officielle, cette page d'accueil de l'IG doit contenir :
-* De quoi parle l'IG (En termes non expert, compréhensible par un patient)
-* Des détails techniques sur le contexte et le besoin
+Cet Implementation Guide permet de définir les profils utilisés pour exposer l'annaire des professionnels de santé et des structures.
 
 
 Les principales sections de l'IG  sont :
@@ -18,3 +14,6 @@ Les principales sections de l'IG  sont :
 | Role  | Nom | Organisation | Contact |
 | --- | --- | --- | --- |
 | **Primary Editor** | Nicolas Riss | Agence du Numérique en Santé | nicolas.riss@esante.gouv.fr |
+| **Primary Editor** | Mohammed CHAABAOUI | Agence du Numérique en Santé |  |
+| **Primary Editor** | Laurent Joubert | Agence du Numérique en Santé |  |
+| **Primary Editor** | Alexis Breithoff | Agence du Numérique en Santé |  |
