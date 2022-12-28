@@ -1,5 +1,5 @@
 Extension: MailboxMSS
-Id: e0a53379-3f1f-4d21-b570-639c17c16b18
+Id: mailbox-mss
 * ^meta.lastUpdated = "2021-04-28T17:22:20.466+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS"
 * ^version = "1.0"

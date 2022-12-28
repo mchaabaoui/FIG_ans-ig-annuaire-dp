@@ -1,5 +1,5 @@
 Extension: PharmacyLicence
-Id: 09aecc03-0f13-43d0-830f-e499317f3b5b
+Id: pharmacy-licence
 Description: "Numéro de licence officine"
 * ^meta.lastUpdated = "2021-04-28T17:22:39.118+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-pharmacyLicence"

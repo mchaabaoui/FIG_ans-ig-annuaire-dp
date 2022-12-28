@@ -1,5 +1,5 @@
 Extension: PractitionerRoleSmartCard
-Id: d04c0d85-189d-4c98-825f-3108864c7ae8
+Id: practitioner-role-smart-card
 * ^meta.lastUpdated = "2021-04-28T17:31:44.683+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-smartCard"
 * ^version = "1.0"

@@ -1,6 +1,6 @@
 Profile: OrganizationRASS
 Parent: FrOrganization
-Id: a1411a70-d6fc-48c2-82de-4eb458122efb
+Id: rass-organization
 * ^meta.lastUpdated = "2021-10-25T09:47:00.822+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
 * ^version = "0.1"

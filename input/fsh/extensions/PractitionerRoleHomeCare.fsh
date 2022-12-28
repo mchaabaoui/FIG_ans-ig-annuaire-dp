@@ -1,5 +1,5 @@
 Extension: PractitionerRoleHomeCare
-Id: d29a369e-3940-41aa-a646-db6b5aa1cc6a
+Id: practitioner-role-home-care
 * ^meta.lastUpdated = "2021-04-28T17:27:40.824+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-homeCare"
 * ^version = "1.0"

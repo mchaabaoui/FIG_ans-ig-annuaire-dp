@@ -1,5 +1,5 @@
 Extension: DeviceNumberaAuthorizationARHGOS
-Id: 256fbba4-45bb-4e5a-8991-d4601eff09c6
+Id: device-number-authorization-arhgos
 * ^meta.lastUpdated = "2021-04-28T17:13:59.058+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/Device-numberAuthorizationARHGOS"
 * ^version = "1.0"

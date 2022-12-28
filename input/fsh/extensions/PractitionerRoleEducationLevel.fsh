@@ -1,5 +1,5 @@
 Extension: PractitionerRoleEducationLevel
-Id: 8afdedb7-7d05-420b-8b3d-058bc823f2ac
+Id: practitioner-role-education-level
 Description: "Niveau de formation acquis de l'étudiant."
 * ^meta.lastUpdated = "2021-04-28T17:26:08.769+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-educationLevel"

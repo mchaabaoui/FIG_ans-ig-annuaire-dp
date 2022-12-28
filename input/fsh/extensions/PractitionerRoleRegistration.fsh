@@ -1,5 +1,5 @@
 Extension: PractitionerRoleRegistration
-Id: 506b4a80-eedc-4aaf-9117-00be055c6367
+Id: practitioner-role-registration
 Description: "Inscription/référencement du professionnel. Première inscription si \"isFirst = true\"."
 * ^meta.lastUpdated = "2021-04-28T17:31:17.755+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-registration"

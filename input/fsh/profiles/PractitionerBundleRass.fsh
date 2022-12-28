@@ -1,6 +1,6 @@
 Profile: PractitionerBundleRass
 Parent: Bundle
-Id: 093592ad-2e94-44a7-997c-96f30d4902df
+Id: rass-practitioner-bundle
 * ^meta.lastUpdated = "2021-04-28T17:53:20.669+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-bundle-rass"
 * ^version = "1.0"

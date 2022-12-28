@@ -1,6 +1,6 @@
 Profile: PractitionerRoleProfessionalRoleRASS
 Parent: PractitionerRole
-Id: e8376e29-c873-4a0a-a5e8-c474b63023ab
+Id: rass-practitioner-role-professional-role
 Description: """Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.).
 Il peut exister plusieurs exercices professionnels pour une personne à un instant donné."""
 * ^meta.lastUpdated = "2021-10-25T09:45:54.166+00:00"

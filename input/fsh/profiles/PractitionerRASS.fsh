@@ -1,6 +1,6 @@
 Profile: PractitionerRASS
-Parent: Practitioner
-Id: bb02347e-adaf-433b-b6e7-388c3a6a2a6b
+Parent: Practitioner // Why not use FrPractitioner ?
+Id: rass-practitioner
 Description: "Profil RASS de la ressource Practitioner."
 * ^meta.lastUpdated = "2021-10-25T09:48:11.896+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-rass"

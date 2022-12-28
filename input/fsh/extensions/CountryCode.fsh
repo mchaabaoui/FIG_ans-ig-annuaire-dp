@@ -1,5 +1,5 @@
 Extension: CountryCode
-Id: f34f3957-6457-4e45-845b-324aeb69ce9a
+Id: country-code
 Description: "Code pays"
 * ^meta.lastUpdated = "2021-04-28T17:12:54.895+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code"

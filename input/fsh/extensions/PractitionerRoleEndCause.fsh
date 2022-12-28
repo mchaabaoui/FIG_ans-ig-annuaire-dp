@@ -1,5 +1,5 @@
 Extension: PractitionerRoleEndCause
-Id: c199c417-bb60-47bc-ade9-a3ba0c7ef891
+Id: practitioner-role-end-cause
 Description: "Motif de fin d'activité"
 * ^meta.lastUpdated = "2021-04-28T17:26:37.968+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-endCause"

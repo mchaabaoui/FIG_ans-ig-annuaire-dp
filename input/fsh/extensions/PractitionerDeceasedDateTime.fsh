@@ -1,5 +1,5 @@
 Extension: PractitionerDeceasedDateTime
-Id: a7ac1751-3cb0-43fb-a22f-6f3ba5d05acd
+Id: practitioner-deceased-date-time
 Description: "Date of death of the practitioner if applicable."
 * ^meta.lastUpdated = "2021-04-28T17:24:05.762+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-deceasedDateTime"

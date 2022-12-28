@@ -1,5 +1,5 @@
 Extension: DigitalCertificate
-Id: 3138190b-4c4c-4c67-af3b-449091e3d523
+Id: digital-certificate
 * ^meta.lastUpdated = "2021-04-28T17:15:20.967+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/digitalCertificate"
 * ^version = "1.0"

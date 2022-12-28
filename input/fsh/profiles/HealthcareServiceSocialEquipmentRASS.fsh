@@ -1,6 +1,6 @@
 Profile: HealthcareServiceSocialEquipmentRASS
 Parent: HealthcareService
-Id: 99c4c829-2350-4355-b745-d9dd219af405
+Id: rass-healthcare-service-social-equipment
 * ^meta.lastUpdated = "2021-10-25T09:47:58.944+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-SocialEquipment-rass"
 * ^version = "1.0"

@@ -1,5 +1,5 @@
 Extension: HealthcareServiceActivityType
-Id: 43907108-8dfc-4d1c-9d14-83a2c3c862b5
+Id: healthcare-service-activity-type
 * ^meta.lastUpdated = "2021-04-28T17:19:29.968+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-activityType"
 * ^version = "1.0"

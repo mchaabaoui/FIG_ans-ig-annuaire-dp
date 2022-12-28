@@ -1,5 +1,5 @@
 Extension: FrenchDepartment
-Id: a72d9979-ed3f-43e1-a4e5-c00f9c9bf251
+Id: french-department
 Description: "Département français"
 * ^meta.lastUpdated = "2021-04-28T17:18:00.796+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department"

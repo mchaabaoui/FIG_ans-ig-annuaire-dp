@@ -1,6 +1,6 @@
 Profile: FrAddressExtended
 Parent: FrAddress
-Id: ac783fbc-0d6b-43f8-8b80-3446c6f09b00
+Id: fr-address-extended
 * ^meta.lastUpdated = "2021-04-28T17:33:42.645+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/fr-address-extended"
 * ^version = "1.0"

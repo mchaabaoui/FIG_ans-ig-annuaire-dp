@@ -1,5 +1,5 @@
 Extension: PractitionerRolePracticeRegion
-Id: 6ee53fc7-8fd9-4391-a984-454c007c219b
+Id: practitioner-role-practice-region
 Description: "Région d'exercice du professionnel"
 * ^meta.lastUpdated = "2021-04-28T17:30:55.170+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-practiceRegion"

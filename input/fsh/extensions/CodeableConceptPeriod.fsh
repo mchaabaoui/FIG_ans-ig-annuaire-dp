@@ -1,5 +1,5 @@
 Extension: CodeableConceptPeriod
-Id: 9b6b12cb-3792-4274-93cf-bfc53b97df97
+Id: codeable-concept-period
 Description: "Extension of type Period on CodeableConcept type"
 * ^meta.lastUpdated = "2021-04-28T17:09:04.715+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/codeableConcept-period"

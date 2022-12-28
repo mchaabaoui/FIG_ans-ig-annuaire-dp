@@ -1,5 +1,5 @@
 Extension: PractitionerRolePartOf
-Id: e2cb0c73-df29-4184-ac27-33f5e0e9b7c9
+Id: practitioner-role-part-of
 Description: "Permet de faire le lien avec un exercice professionnel. Cette extension est à utiliser dans le profil situation d'exercice de la ressource PractitionerRole."
 * ^meta.lastUpdated = "2021-04-28T17:29:43.463+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf"

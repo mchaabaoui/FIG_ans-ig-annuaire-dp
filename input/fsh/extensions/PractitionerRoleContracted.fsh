@@ -1,5 +1,5 @@
 Extension: PractitionerRoleContracted
-Id: 34caa6e2-5ae3-4660-a717-092d9839da62
+Id: practitioner-role-contracted
 * ^meta.lastUpdated = "2021-04-28T17:25:25.123+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-contracted"
 * ^version = "1.0"

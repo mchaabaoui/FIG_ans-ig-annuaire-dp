@@ -1,5 +1,5 @@
 Extension: PractitionerNationality
-Id: 4742b41b-1bf3-4d61-a177-9d72bca7b8db
+Id: practitioner-nationality
 * ^meta.lastUpdated = "2021-04-28T17:24:26.955+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-nationality"
 * ^version = "1.0"

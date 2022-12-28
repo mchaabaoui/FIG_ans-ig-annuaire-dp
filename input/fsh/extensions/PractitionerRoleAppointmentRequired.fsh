@@ -1,5 +1,5 @@
 Extension: PractitionerRoleAppointmentRequired
-Id: 9b6c3c4e-76a9-47df-b9ce-b463825ce563
+Id: practitioner-role-appointment-required
 * ^meta.lastUpdated = "2021-04-28T17:25:08.186+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-appointmentRequired"
 * ^version = "1.0"

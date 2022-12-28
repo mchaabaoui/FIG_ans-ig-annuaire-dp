@@ -1,5 +1,5 @@
 Extension: HealthcareServiceDeleteAutorisationImplantation
-Id: 7311b8d3-19d0-4000-8c29-b9fc537974c8
+Id: healthcare-service-delete-autorisation-implantation
 * ^meta.lastUpdated = "2021-04-28T17:20:51.904+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-deleteAutorisationImplantation"
 * ^version = "1.0"

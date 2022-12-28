@@ -1,6 +1,6 @@
 Profile: CodeableConceptTimed
 Parent: CodeableConcept
-Id: d13edbb6-a59a-4cfa-9f83-c99efa5fd2b3
+Id: codeable-concept-timed
 * ^meta.lastUpdated = "2021-04-28T17:34:02.902+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/codeableConcept-timed"
 * ^version = "1.0"

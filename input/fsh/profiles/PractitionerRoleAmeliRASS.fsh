@@ -1,6 +1,6 @@
 Profile: PractitionerRoleAmeliRASS
 Parent: PractitionerRole
-Id: 5cfb933e-c9b6-4c86-a7be-5cd1d7bbf055
+Id: rass-practitioner-role-ameli
 * ^meta.lastUpdated = "2021-10-25T09:47:19.905+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-ameli-rass"
 * ^version = "1.0"

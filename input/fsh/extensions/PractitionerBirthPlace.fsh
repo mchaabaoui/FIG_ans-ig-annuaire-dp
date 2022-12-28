@@ -1,5 +1,5 @@
 Extension: PractitionerBirthPlace
-Id: b67ec90e-e843-4aa4-a3d4-b1b85ea5955a
+Id: practitioner-birth-place
 * ^meta.lastUpdated = "2021-04-28T17:23:15.138+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-birthPlace"
 * ^version = "1.0"

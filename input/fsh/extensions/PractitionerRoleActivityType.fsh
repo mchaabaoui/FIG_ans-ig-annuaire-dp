@@ -1,5 +1,5 @@
 Extension: PractitionerRoleActivityType
-Id: afa2f2cd-fc43-4d63-9b68-f8b43724d862
+Id: practitioner-role-activity-type
 * ^meta.lastUpdated = "2021-04-28T17:24:49.343+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-activityType"
 * ^version = "1.0"

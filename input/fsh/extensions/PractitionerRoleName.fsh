@@ -1,5 +1,5 @@
 Extension: PractitionerRoleName
-Id: cc2fe4f6-6d18-44dd-abac-6c2222900e2d
+Id: practitioner-role-name
 Description: "Nom d'exercice"
 * ^meta.lastUpdated = "2021-04-28T17:28:18.774+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name"

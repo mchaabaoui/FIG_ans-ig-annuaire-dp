@@ -1,5 +1,5 @@
 Extension: HealthcareServiceAuthorizationDate
-Id: 9029b721-e28c-4be8-91fd-339688880866
+Id: healthcare-service-authorization-date
 * ^meta.lastUpdated = "2021-04-28T17:19:46.918+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-authorizationDate"
 * ^version = "1.0"

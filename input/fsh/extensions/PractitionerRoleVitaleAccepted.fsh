@@ -1,5 +1,5 @@
 Extension: PractitionerRoleVitaleAccepted
-Id: 8e41ae3e-5362-4413-bfa3-750418853039
+Id: practitioner-role-vitale-accepted
 * ^meta.lastUpdated = "2021-04-28T17:32:07.373+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted"
 * ^version = "1.0"
