@@ -1,0 +1,442 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ans.fhir.fr.annuaire",
+  "url": "http://interop.esante.gouv.fr/ci-sis/fhir/annuaire/ImplementationGuide/ans.fhir.fr.annuaire",
+  "version": "0.1.0",
+  "name": "AnnuaireImplementationGuide",
+  "title": "Implementation Guide de l'annuaire de l'ANS",
+  "status": "active",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "ANS",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://esante.gouv.fr"
+        },
+        {
+          "system": "email",
+          "value": "monserviceclient.annuaire@esante.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "packageId": "ans.fhir.fr.annuaire",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.fr.core",
+      "version": "1.1.0",
+      "uri": "http://fhir.org/packages/hl7.fhir.fr.core/ImplementationGuide/hl7.fhir.fr.core",
+      "id": "hl7_fhir_fr_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/codeable-concept-timed"
+        },
+        "name": "CodeableConceptTimed",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-device"
+        },
+        "name": "DeviceRASS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fr-address-extended"
+        },
+        "name": "FrAddressExtended",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-healthcare-service-healthcare-activity"
+        },
+        "name": "HealthcareServiceHealthCareActivityRASS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-healthcare-service-social-equipment"
+        },
+        "name": "HealthcareServiceSocialEquipmentRASS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-location"
+        },
+        "name": "LocationRASS",
+        "description": "Profil de la ressource Location contained dans le profil Situation d'exercice de PractitionerRole. Elle contient l'adresse d'activité du professionnel.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-organization"
+        },
+        "name": "OrganizationRASS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-practitioner-bundle"
+        },
+        "name": "PractitionerBundleRass",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-practitioner"
+        },
+        "name": "PractitionerRASS",
+        "description": "Profil RASS de la ressource Practitioner.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-practitioner-role-ameli"
+        },
+        "name": "PractitionerRoleAmeliRASS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-practitioner-role-organizational-role"
+        },
+        "name": "PractitionerRoleOrganizationalRoleRASS",
+        "description": "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rass-practitioner-role-professional-role"
+        },
+        "name": "PractitionerRoleProfessionalRoleRASS",
+        "description": "Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.).\nIl peut exister plusieurs exercices professionnels pour une personne à un instant donné.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/codeable-concept-period"
+        },
+        "name": "CodeableConceptPeriod",
+        "description": "Extension of type Period on CodeableConcept type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/country-code"
+        },
+        "name": "CountryCode",
+        "description": "Code pays",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/device-authorization-date"
+        },
+        "name": "DeviceAuthorizationDateDevice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/device-number-authorization-arhgos"
+        },
+        "name": "DeviceNumberaAuthorizationARHGOS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/device-period-implentation"
+        },
+        "name": "DevicePeriodImplentation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/digital-certificate"
+        },
+        "name": "DigitalCertificate",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/french-department"
+        },
+        "name": "FrenchDepartment",
+        "description": "Département français",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-activity-type"
+        },
+        "name": "HealthcareServiceActivityType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-authorization-date"
+        },
+        "name": "HealthcareServiceAuthorizationDate",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-authorization-number-arhgos"
+        },
+        "name": "HealthcareServiceAuthorizationNumberARHGOS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-date-update-activity"
+        },
+        "name": "HealthcareServiceDateUpdateActivity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-delete-autorisation-implantation"
+        },
+        "name": "HealthcareServiceDeleteAutorisationImplantation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-implementation-period"
+        },
+        "name": "HealthcareServiceImplementationPeriod",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/healthcare-service-installation-date"
+        },
+        "name": "HealthcareServiceInstallationDate",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mailbox-mss"
+        },
+        "name": "MailboxMSS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/pharmacy-licence"
+        },
+        "name": "PharmacyLicence",
+        "description": "Numéro de licence officine",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-authorization"
+        },
+        "name": "PractitionerAuthorization",
+        "description": "Autorisation d'exercice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-birth-place"
+        },
+        "name": "PractitionerBirthPlace",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-deceased-date-time"
+        },
+        "name": "PractitionerDeceasedDateTime",
+        "description": "Date of death of the practitioner if applicable.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-nationality"
+        },
+        "name": "PractitionerNationality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-activity-type"
+        },
+        "name": "PractitionerRoleActivityType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-appointment-required"
+        },
+        "name": "PractitionerRoleAppointmentRequired",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-contracted"
+        },
+        "name": "PractitionerRoleContracted",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-education-level"
+        },
+        "name": "PractitionerRoleEducationLevel",
+        "description": "Niveau de formation acquis de l'étudiant.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-end-cause"
+        },
+        "name": "PractitionerRoleEndCause",
+        "description": "Motif de fin d'activité",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-has-cas"
+        },
+        "name": "PractitionerRoleHasCAS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-home-care"
+        },
+        "name": "PractitionerRoleHomeCare",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-name"
+        },
+        "name": "PractitionerRoleName",
+        "description": "Nom d'exercice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-part-of"
+        },
+        "name": "PractitionerRolePartOf",
+        "description": "Permet de faire le lien avec un exercice professionnel. Cette extension est à utiliser dans le profil situation d'exercice de la ressource PractitionerRole.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-practice-region"
+        },
+        "name": "PractitionerRolePracticeRegion",
+        "description": "Région d'exercice du professionnel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-registration"
+        },
+        "name": "PractitionerRoleRegistration",
+        "description": "Inscription/référencement du professionnel. Première inscription si \"isFirst = true\".",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-smart-card"
+        },
+        "name": "PractitionerRoleSmartCard",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitioner-role-vitale-accepted"
+        },
+        "name": "PractitionerRoleVitaleAccepted",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Accueil",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "specifications_techniques.html",
+          "title": "Specifications Techniques",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "construction_des_flux.html",
+              "title": "Construction Des Flux",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "st_flux1.html",
+              "title": "Flux 01",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "st_flux2.html",
+              "title": "Flux 02",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "autres_ressources.html",
+          "title": "Autres Ressources",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "securite.html",
+              "title": "Sécurité",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "downloads.html",
+              "title": "Téléchargements et usages",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "about.html",
+          "title": "A propos de ce guide",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "shownav",
+        "value": "true"
+      }
+    ]
+  }
+}

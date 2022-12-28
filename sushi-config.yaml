@@ -1,22 +1,25 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.example
-canonical: http://hl7.org/fhir/fr/example
-name: ExampleIG
-title: ANS IG Example
+id: ans.fhir.fr.annuaire
+canonical: http://interop.esante.gouv.fr/ci-sis/fhir/annuaire
+name: Annuaire Implementation Guide
+title: Implementation Guide de l'annuaire de l'ANS
 publisher:
   name: ANS
   url: https://esante.gouv.fr
-status: draft
+  email: monserviceclient.annuaire@esante.gouv.fr
+  
+status: active
 version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2020+
 releaseLabel: ci-build
 
+dependencies:
+    hl7.fhir.fr.core: 1.1.0
+
 parameters:
     shownav: 'true'
-
-
 
 pages:
     index.md:
