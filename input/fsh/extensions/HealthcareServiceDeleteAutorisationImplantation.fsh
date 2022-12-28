@@ -4,5 +4,6 @@ Id: healthcare-service-delete-autorisation-implantation
 
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
+
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-deleteAutorisationImplantation" (exactly)
 * value[x] only boolean

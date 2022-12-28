@@ -5,6 +5,8 @@ Description: "Permet de faire le lien avec un exercice professionnel. Cette exte
 
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
+
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-partOf" (exactly)
+
 * value[x] 1..
 * value[x] only Reference(PractitionerRole)

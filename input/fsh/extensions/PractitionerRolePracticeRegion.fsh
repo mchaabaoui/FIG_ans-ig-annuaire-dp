@@ -5,7 +5,9 @@ Description: "Région d'exercice du professionnel"
 
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
+
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-practiceRegion" (exactly)
+
 * value[x] only CodeableConcept
-* value[x] from $JDV-J93-RegionOM-RASS (required)
-* value[x] ^binding.description = "Régions (outre-mer et Monaco inclus) dans le RASS https://mos.esante.gouv.fr/NOS/JDV_J93-RegionOM-RASS/FHIR/JDV-J93-RegionOM-RASS"
+* valueCodeableConcept from $JDV-J93-RegionOM-RASS (required)
+* valueCodeableConcept ^binding.description = "Régions (outre-mer et Monaco inclus) dans le RASS https://mos.esante.gouv.fr/NOS/JDV_J93-RegionOM-RASS/FHIR/JDV-J93-RegionOM-RASS"

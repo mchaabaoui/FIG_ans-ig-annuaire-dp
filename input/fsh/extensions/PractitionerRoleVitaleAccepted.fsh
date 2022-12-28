@@ -4,5 +4,7 @@ Id: practitioner-role-vitale-accepted
 
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
+
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-vitaleAccepted" (exactly)
+
 * value[x] only boolean

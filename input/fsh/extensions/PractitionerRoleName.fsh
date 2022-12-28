@@ -5,5 +5,7 @@ Description: "Nom d'exercice"
 
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
+
 * url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name" (exactly)
+
 * value[x] only FrHumanName

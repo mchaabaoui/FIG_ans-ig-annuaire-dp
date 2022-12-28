@@ -10,14 +10,17 @@ Id: rass-device
 * implicitRules ..0
 * text ..0
 * contained ..0
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
+
 * extension contains
     DeviceNumberaAuthorizationARHGOS named numberAuthorizationARHGOS 0..1 and
     DeviceAuthorizationDateDevice named authorizationDateDevice 0..1 and
     DevicePeriodImplentation named periodImplentation 0..1
+    
 * definition ..0
 * udiCarrier ..0
 * statusReason ..0
