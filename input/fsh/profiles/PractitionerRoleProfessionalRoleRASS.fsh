@@ -12,6 +12,7 @@ Il peut exister plusieurs exercices professionnels pour une personne à un insta
 * ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass" (exactly)
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -23,16 +24,19 @@ Il peut exister plusieurs exercices professionnels pour une personne à un insta
     PractitionerRoleSmartCard named smartCard 0..* and
     DigitalCertificate named digitalCertificate 0..* and
     MailboxMSS named mailboxMSS 0..*
+
 * extension[name] ^min = 0
 * extension[registration] ^min = 0
 * extension[educationLevel] ^min = 0
 * extension[smartCard] ^min = 0
 * extension[digitalCertificate] ^min = 0
+
 * extension[digitalCertificate].extension ^slicing.discriminator.type = #value
 * extension[digitalCertificate].extension ^slicing.discriminator.path = "url"
 * extension[digitalCertificate].extension ^slicing.rules = #open
 * extension[digitalCertificate].extension ^min = 0
-* extension[digitalCertificate].extension contains domain 0..0
+* extension[digitalCertificate].extension[domain] 0..0
+
 * extension[mailboxMSS] ^min = 0
 * practitioner 1..
 * organization ..0
