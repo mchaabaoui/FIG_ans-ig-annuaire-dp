@@ -1,13 +1,8 @@
 Profile: PractitionerRoleAmeliRASS
 Parent: PractitionerRole
 Id: rass-practitioner-role-ameli
-* ^meta.lastUpdated = "2021-10-25T09:47:19.905+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-ameli-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^date = "2021-04-28T17:51:22.1358797+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-ameli-rass" (exactly)
 * meta.security ..0

@@ -1,10 +1,7 @@
 Extension: PractitionerNationality
 Id: practitioner-nationality
-* ^meta.lastUpdated = "2021-04-28T17:24:26.955+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-nationality"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:28:28.4723147+00:00"
-* ^publisher = "ANS"
+
 * ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "Practitioner"

@@ -1,11 +1,7 @@
 Extension: PractitionerRoleSmartCard
 Id: practitioner-role-smart-card
-* ^meta.lastUpdated = "2021-04-28T17:31:44.683+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-smartCard"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:49:36.597886+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 * extension ^slicing.discriminator.type = #value

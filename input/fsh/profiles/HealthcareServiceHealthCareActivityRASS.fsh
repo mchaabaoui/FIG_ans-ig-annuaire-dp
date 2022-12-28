@@ -1,13 +1,8 @@
 Profile: HealthcareServiceHealthCareActivityRASS
 Parent: HealthcareService
 Id: rass-healthcare-service-healthcare-activity
-* ^meta.lastUpdated = "2021-10-25T09:47:46.353+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-HealthCareActivity-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^date = "2021-04-28T17:38:48.5960824+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-HealthCareActivity-rass" (exactly)
 * meta.security ..0

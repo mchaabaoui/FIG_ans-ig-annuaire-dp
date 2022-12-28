@@ -1,13 +1,8 @@
 Profile: DeviceRASS
 Parent: Device
 Id: rass-device
-* ^meta.lastUpdated = "2021-10-25T09:47:33.388+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/Device-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^date = "2021-04-28T17:35:16.2874825+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/Device-rass" (exactly)
 * meta.security ..0

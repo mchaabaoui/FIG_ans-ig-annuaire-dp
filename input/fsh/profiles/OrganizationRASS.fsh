@@ -1,12 +1,7 @@
 Profile: OrganizationRASS
 Parent: FrOrganization
 Id: rass-organization
-* ^meta.lastUpdated = "2021-10-25T09:47:00.822+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass"
-* ^version = "0.1"
-* ^date = "2021-06-15T14:41:55.141808+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/organization-rass" (exactly)

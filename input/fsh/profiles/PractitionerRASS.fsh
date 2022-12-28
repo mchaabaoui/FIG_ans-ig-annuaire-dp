@@ -2,14 +2,8 @@ Profile: PractitionerRASS
 Parent: Practitioner // Why not use FrPractitioner ?
 Id: rass-practitioner
 Description: "Profil RASS de la ressource Practitioner."
-* ^meta.lastUpdated = "2021-10-25T09:48:11.896+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2021-04-28T17:49:04.3952404+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-rass" (exactly)
 * extension ^slicing.discriminator.type = #value

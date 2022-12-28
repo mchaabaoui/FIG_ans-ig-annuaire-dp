@@ -2,13 +2,8 @@ Profile: PractitionerRoleOrganizationalRoleRASS
 Parent: PractitionerRole
 Id: rass-practitioner-role-organizational-role
 Description: "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants)"
-* ^meta.lastUpdated = "2022-03-16T11:10:07.258+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^date = "2021-03-25T18:14:24.4684966+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-organizationalRole-rass" (exactly)
 * contained only LocationRASS

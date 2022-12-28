@@ -3,13 +3,8 @@ Parent: PractitionerRole
 Id: rass-practitioner-role-professional-role
 Description: """Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, militaire, etc.).
 Il peut exister plusieurs exercices professionnels pour une personne à un instant donné."""
-* ^meta.lastUpdated = "2021-10-25T09:45:54.166+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass"
-* ^version = "1.0"
-* ^status = #active
-* ^date = "2021-04-28T17:52:43.8774063+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-professionalRole-rass" (exactly)
 

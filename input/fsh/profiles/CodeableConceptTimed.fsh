@@ -1,12 +1,8 @@
 Profile: CodeableConceptTimed
 Parent: CodeableConcept
 Id: codeable-concept-timed
-* ^meta.lastUpdated = "2021-04-28T17:34:02.902+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/codeableConcept-timed"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:52:24.9747255+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

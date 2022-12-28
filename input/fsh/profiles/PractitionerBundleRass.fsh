@@ -1,12 +1,8 @@
 Profile: PractitionerBundleRass
 Parent: Bundle
 Id: rass-practitioner-bundle
-* ^meta.lastUpdated = "2021-04-28T17:53:20.669+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-bundle-rass"
-* ^version = "1.0"
-* ^date = "2021-03-25T18:09:20.4901795+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * meta.source = "https://annuaire.sante.fr" (exactly)
 * meta.profile = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/BundlePP-RASS" (exactly)
 * type = #collection (exactly)

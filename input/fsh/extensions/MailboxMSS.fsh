@@ -1,11 +1,7 @@
 Extension: MailboxMSS
 Id: mailbox-mss
-* ^meta.lastUpdated = "2021-04-28T17:22:20.466+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/mailboxMSS"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:19:41.651257+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * ^context[0].type = #element
 * ^context[=].expression = "Practitioner"
 * ^context[+].type = #element

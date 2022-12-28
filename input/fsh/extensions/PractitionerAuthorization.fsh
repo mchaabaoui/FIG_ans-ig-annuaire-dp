@@ -1,12 +1,8 @@
 Extension: PractitionerAuthorization
 Id: practitioner-authorization
 Description: "Autorisation d'exercice"
-* ^meta.lastUpdated = "2021-04-28T17:22:55.063+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-authorization"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:21:57.4212643+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * ^context.type = #element
 * ^context.expression = "Practitioner"
 * extension ^slicing.discriminator.type = #value

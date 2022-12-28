@@ -1,12 +1,7 @@
 Profile: FrAddressExtended
 Parent: FrAddress
 Id: fr-address-extended
-* ^meta.lastUpdated = "2021-04-28T17:33:42.645+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/fr-address-extended"
-* ^version = "1.0"
-* ^date = "2021-03-25T17:56:14.3625705Z"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

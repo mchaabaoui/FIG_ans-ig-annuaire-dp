@@ -1,11 +1,7 @@
 Extension: DigitalCertificate
 Id: digital-certificate
-* ^meta.lastUpdated = "2021-04-28T17:15:20.967+00:00"
 * ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/digitalCertificate"
-* ^version = "1.0"
-* ^date = "2021-03-25T16:51:29.5062856+00:00"
-* ^publisher = "ANS"
-* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
+
 * ^context[0].type = #element
 * ^context[=].expression = "PractitionerRole"
 * ^context[+].type = #element
