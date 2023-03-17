@@ -10,6 +10,8 @@ Validate resource against profile http://hl7.org/fhir/StructureDefinition/Librar
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 
+Validate resource against profile http://interopsante.org/fhir/StructureDefinition
+
 # Have verified that these examples are being checked against the expected profiles/resources.
 INFORMATION: Binary/example: Binary: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary
 INFORMATION: Bundle/h1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle

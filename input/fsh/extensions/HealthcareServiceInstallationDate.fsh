@@ -1,10 +1,11 @@
 Extension: HealthcareServiceInstallationDate
-Id: healthcare-service-installation-date
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-installationDate"
-
+Id: HealthcareService-InstallationDate
+* ^meta.lastUpdated = "2022-07-25T17:31:04.3510739+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
 * ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-installationDate" (exactly)
+* . ^short = "Date de première installation"
 * value[x] only date

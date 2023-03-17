@@ -1,11 +1,11 @@
 Extension: PractitionerRoleName
-Id: practitioner-role-name
+Id: PractitionerRole-Name
 Description: "Nom d'exercice"
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name"
-
+* ^meta.lastUpdated = "2022-07-25T17:21:39.6157647+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-name" (exactly)
-
-* value[x] only FrHumanName
+* value[x] only $FrHumanName

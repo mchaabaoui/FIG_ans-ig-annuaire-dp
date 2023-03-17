@@ -1,0 +1,278 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AS-Device",
+  "meta": {
+    "lastUpdated": "2022-07-29T12:25:46.72588+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/AS-Device",
+  "version": "0.3",
+  "name": "ASDevice",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
+  "description": "Profil créé à partir de la ressource Device dans le cadre de l'annuaire santé - décrit les équipements matériels lourds ('EML') mis en oeuvre au sein d'établissements.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "udi",
+      "uri": "http://fda.gov/UDI",
+      "name": "UDI Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.meta.source",
+        "path": "Device.meta.source",
+        "fixedUri": "https://annuaire.sante.fr"
+      },
+      {
+        "id": "Device.meta.profile",
+        "path": "Device.meta.profile",
+        "fixedCanonical": "https://annuaire.sante.gouv.fr/fhir/StructureDefinition/AS-Device"
+      },
+      {
+        "id": "Device.meta.security",
+        "path": "Device.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Device.meta.tag",
+        "path": "Device.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Device.implicitRules",
+        "path": "Device.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Device.text",
+        "path": "Device.text",
+        "max": "0"
+      },
+      {
+        "id": "Device.contained",
+        "path": "Device.contained",
+        "max": "0"
+      },
+      {
+        "id": "Device.extension",
+        "path": "Device.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Device.extension:numberAuthorizationARHGOS",
+        "path": "Device.extension",
+        "sliceName": "numberAuthorizationARHGOS",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Device-NumberAuthorizationARHGOS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Device.extension:authorizationDateDevice",
+        "path": "Device.extension",
+        "sliceName": "authorizationDateDevice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Device-AuthorizationDateDevice"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Device.extension:periodImplantation",
+        "path": "Device.extension",
+        "sliceName": "periodImplantation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Device-PeriodImplantation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Device.identifier",
+        "path": "Device.identifier",
+        "short": "Numéro autorisation ARGHOS"
+      },
+      {
+        "id": "Device.definition",
+        "path": "Device.definition",
+        "max": "0"
+      },
+      {
+        "id": "Device.udiCarrier",
+        "path": "Device.udiCarrier",
+        "max": "0"
+      },
+      {
+        "id": "Device.status",
+        "path": "Device.status",
+        "comment": "= “active” par défaut; \r\nSinon, si le matériel est inactif =” inactive”"
+      },
+      {
+        "id": "Device.statusReason",
+        "path": "Device.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "Device.distinctIdentifier",
+        "path": "Device.distinctIdentifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.manufacturer",
+        "path": "Device.manufacturer",
+        "short": "Marque de l'équipement matériel lourd"
+      },
+      {
+        "id": "Device.manufactureDate",
+        "path": "Device.manufactureDate",
+        "max": "0"
+      },
+      {
+        "id": "Device.expirationDate",
+        "path": "Device.expirationDate",
+        "max": "0"
+      },
+      {
+        "id": "Device.lotNumber",
+        "path": "Device.lotNumber",
+        "max": "0"
+      },
+      {
+        "id": "Device.serialNumber",
+        "path": "Device.serialNumber",
+        "short": "Numéro de série de l'équipement matériel lourd"
+      },
+      {
+        "id": "Device.deviceName",
+        "path": "Device.deviceName",
+        "max": "0"
+      },
+      {
+        "id": "Device.modelNumber",
+        "path": "Device.modelNumber",
+        "max": "0"
+      },
+      {
+        "id": "Device.partNumber",
+        "path": "Device.partNumber",
+        "max": "0"
+      },
+      {
+        "id": "Device.type",
+        "path": "Device.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J135-EquipementMaterielLourd-RASS/FHIR/JDV-J135-EquipementMaterielLourd-RASS",
+          "description": "Code définissant l'équipement matériel lourd (EML) soumis à autorisation"
+        }
+      },
+      {
+        "id": "Device.type.coding.system",
+        "path": "Device.type.coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd"
+      },
+      {
+        "id": "Device.specialization",
+        "path": "Device.specialization",
+        "max": "0"
+      },
+      {
+        "id": "Device.version",
+        "path": "Device.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.property",
+        "path": "Device.property",
+        "max": "0"
+      },
+      {
+        "id": "Device.patient",
+        "path": "Device.patient",
+        "max": "0"
+      },
+      {
+        "id": "Device.owner",
+        "path": "Device.owner",
+        "short": "Référence vers la structure FINESS ET",
+        "comment": "Reference vers l'id de la ressource de la structure FINESS ET à laquelle est rattaché cet équipement matériel lourd"
+      },
+      {
+        "id": "Device.contact",
+        "path": "Device.contact",
+        "max": "0"
+      },
+      {
+        "id": "Device.location",
+        "path": "Device.location",
+        "max": "0"
+      },
+      {
+        "id": "Device.url",
+        "path": "Device.url",
+        "max": "0"
+      },
+      {
+        "id": "Device.note",
+        "path": "Device.note",
+        "max": "0"
+      },
+      {
+        "id": "Device.safety",
+        "path": "Device.safety",
+        "max": "0"
+      },
+      {
+        "id": "Device.parent",
+        "path": "Device.parent",
+        "max": "0"
+      }
+    ]
+  }
+}

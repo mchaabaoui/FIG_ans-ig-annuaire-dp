@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "hl7.fhir.fr.core": "^1.1.0"
+  }
+}

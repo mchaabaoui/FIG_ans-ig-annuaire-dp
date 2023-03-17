@@ -1,12 +1,14 @@
 Extension: PractitionerRoleEndCause
-Id: practitioner-role-end-cause
+Id: PractitionerRole-EndCause
 Description: "Motif de fin d'activité"
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-endCause"
-
+* ^meta.lastUpdated = "2022-07-08T13:18:13.46655+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-endCause" (exactly)
-
 * value[x] only CodeableConcept
-* valueCodeableConcept from $JDV-J92-MotifFinActivite-RASS (required)
-* valueCodeableConcept ^binding.description = "Motifs de fin d'activité d'un professionnel du RASS, https://mos.esante.gouv.fr/NOS/JDV_J92-MotifFinActivite-RASS/FHIR/JDV-J92-MotifFinActivite-RASS"
+* value[x] from $JDV-J92-MotifFinActivite-RASS (required)
+* value[x] ^binding.description = "Motifs de fin d'activité d'un professionnel du RASS,"
+* value[x].coding.system = "https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite" (exactly)

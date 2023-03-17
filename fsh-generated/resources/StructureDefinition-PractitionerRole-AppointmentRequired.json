@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PractitionerRole-AppointmentRequired",
+  "meta": {
+    "lastUpdated": "2022-07-08T13:17:18.9970158+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-AppointmentRequired",
+  "version": "0.3",
+  "name": "PractitionerRoleAppointmentRequired",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PractitionerRole.availableTime"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Type de consultation proposé par le professionnel de santé"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-AppointmentRequired"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "comment": "avc_rdv = avec rendez-vous; ss-rdv = sans rendez-vous, non_r = non renseigné",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

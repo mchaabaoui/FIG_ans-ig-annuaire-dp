@@ -1,10 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "fr-address-extended",
-  "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/fr-address-extended",
+  "id": "Fr-Address-Extended",
+  "meta": {
+    "lastUpdated": "2022-07-25T17:40:40.0522362+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Fr-Address-Extended",
   "version": "0.1.0",
   "name": "FrAddressExtended",
-  "status": "active",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -23,7 +32,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department"
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/French-Department"
             ]
           }
         ]
@@ -38,10 +47,23 @@
           {
             "code": "Extension",
             "profile": [
-              "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/address-country-code"
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Address-Country-Code"
             ]
           }
         ]
+      },
+      {
+        "id": "Address.line.extension",
+        "path": "Address.line.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
         "id": "Address.line.extension:careOf",

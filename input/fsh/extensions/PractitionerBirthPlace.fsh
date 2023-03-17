@@ -1,11 +1,14 @@
 Extension: PractitionerBirthPlace
-Id: practitioner-birth-place
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-birthPlace"
-
+Id: Practitioner-BirthPlace
+* ^meta.lastUpdated = "2022-07-25T17:26:30.8116702+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
 * ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "Practitioner"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-birthPlace" (exactly)
-
-* value[x] only FrAddressExtended
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #closed
+* valueAddress only FrAddressExtended
+* valueAddress ^sliceName = "valueAddress"

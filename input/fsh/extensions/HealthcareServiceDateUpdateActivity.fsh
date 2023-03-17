@@ -1,9 +1,11 @@
 Extension: HealthcareServiceDateUpdateActivity
-Id: healthcare-service-date-update-activity
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-dateUpdateActivity"
-
+Id: HealthcareService-DateUpdateActivity
+* ^meta.lastUpdated = "2022-07-25T17:33:21.1229573+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-dateUpdateActivity" (exactly)
+* . ^short = "Date maj sur activité"
 * value[x] only date

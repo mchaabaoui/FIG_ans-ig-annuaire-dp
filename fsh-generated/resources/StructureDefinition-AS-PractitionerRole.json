@@ -1,0 +1,872 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AS-PractitionerRole",
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/AS-PractitionerRole",
+  "version": "0.3",
+  "name": "ASPractitionerRole",
+  "status": "draft",
+  "description": "Profil créé à partir de la ressource PractitionerRole dans le cadre de l'annuaire santé - décrit l'exercice professionel et la situation d'exercice - contient les informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel, le cadre de son exercice (civil, militaire, etc.) ainsi que les aractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.meta.source",
+        "path": "PractitionerRole.meta.source",
+        "fixedUri": "https://annuaire.sante.fr"
+      },
+      {
+        "id": "PractitionerRole.meta.profile",
+        "path": "PractitionerRole.meta.profile",
+        "fixedCanonical": "https://annuaire.sante.gouv.fr/fhir/StructureDefinition/AS-PractitionerRole"
+      },
+      {
+        "id": "PractitionerRole.meta.security",
+        "path": "PractitionerRole.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.meta.tag",
+        "path": "PractitionerRole.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.implicitRules",
+        "path": "PractitionerRole.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.text",
+        "path": "PractitionerRole.text",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.contained",
+        "path": "PractitionerRole.contained",
+        "max": "0",
+        "type": [
+          {
+            "code": "Location",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/AS-Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.extension:name",
+        "path": "PractitionerRole.extension",
+        "sliceName": "name",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-Name"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:name.value[x].id",
+        "path": "PractitionerRole.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:name.value[x].use",
+        "path": "PractitionerRole.extension.value[x].use",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:name.value[x].text",
+        "path": "PractitionerRole.extension.value[x].text",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:name.value[x].prefix",
+        "path": "PractitionerRole.extension.value[x].prefix",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:name.value[x].period",
+        "path": "PractitionerRole.extension.value[x].period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:registration",
+        "path": "PractitionerRole.extension",
+        "sliceName": "registration",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-Registration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:registration.extension:registeringOrganizationDetail",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "registeringOrganizationDetail",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:registration.extension:period",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:registration.extension:status",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "status",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:registration.extension:hostingDepartment",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "hostingDepartment",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:registration.extension:isFirst",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "isFirst",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel",
+        "path": "PractitionerRole.extension",
+        "sliceName": "educationLevel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-EducationLevel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.id",
+        "path": "PractitionerRole.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.extension:academicDegree",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "academicDegree",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.extension:achievedLevel",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "achievedLevel",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.extension:academicYear",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "academicYear",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.extension:period",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:educationLevel.extension:issuer",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "issuer",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:smartCard",
+        "path": "PractitionerRole.extension",
+        "sliceName": "smartCard",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-SmartCard"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:partOf",
+        "path": "PractitionerRole.extension",
+        "sliceName": "partOf",
+        "short": "Référence vers l'id de l'exercice pro de ratachement",
+        "min": 0,
+        "max": "0",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/PractitionerRole-PartOf"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:mailboxMSS",
+        "path": "PractitionerRole.extension",
+        "sliceName": "mailboxMSS",
+        "definition": "BALs MSS de type PER rattaché à l'identifiant du professionnel de santé  ainsi qu'au lieu de sa situation d'exercice",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/MailboxMSS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:mailboxMSS.id",
+        "path": "PractitionerRole.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:mailboxMSS.extension:responsible",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "responsible",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:mailboxMSS.extension:phone",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "phone",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.extension:mailboxMSS.extension:date",
+        "path": "PractitionerRole.extension.extension",
+        "sliceName": "date",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.code.coding",
+        "path": "PractitionerRole.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:CategorieProfession",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "CategorieProfession",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J89-CategorieProfessionnelle-RASS/FHIR/JDV-J89-CategorieProfessionnelle-RASS",
+          "description": "Catégories professionnelles dans le RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:CategorieProfession.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R09-CategorieProfessionnelle/FHIR/TRE-R09-CategorieProfessionnelle"
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionG15",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "professionG15",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
+          "description": "Ensemble des professions du RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionG15.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Professions de santé définies par le code de la santé publique",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante/TRE_G15-ProfessionSante-FHIR.json"
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR94",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "professionR94",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
+          "description": "Ensemble des professions du RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR94.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Profession du social",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR95",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "professionR95",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
+          "description": "Ensemble des professions du RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR95.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Usager de titre professionnel",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre"
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR291",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "professionR291",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
+          "description": "Ensemble des professions du RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:professionR291.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Liste de professionnels non membres d'une profession réglementée",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession"
+      },
+      {
+        "id": "PractitionerRole.code.coding:genreActivite",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "genreActivite",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J94-GenreActivite-RASS/FHIR/JDV-J94-GenreActivite-RASS",
+          "description": "Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:genreActivite.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite"
+      },
+      {
+        "id": "PractitionerRole.code.coding:modeExercice",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "modeExercice",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J95-ModeExercice-RASS/FHIR/JDV-J95-ModeExercice-RASS",
+          "description": "Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:modeExercice.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice"
+      },
+      {
+        "id": "PractitionerRole.code.coding:typeActiviteLiberale",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "typeActiviteLiberale",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.coding:typeActiviteLiberale.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale"
+      },
+      {
+        "id": "PractitionerRole.code.coding:statutProfessionnelSSA",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "statutProfessionnelSSA",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.coding:statutProfessionnelSSA.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https:mos//.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA"
+      },
+      {
+        "id": "PractitionerRole.code.coding:statutHospitalier",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "statutHospitalier",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code.coding:statutHospitalier.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier"
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR21",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "fonctionR21",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J108-EnsembleFonction-RASS/FHIR/JDV-J108-EnsembleFonction-RASS",
+          "description": "Ensemble des fonctions et rôles du professionel au sein de la stucture d'exercice"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR21.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Fonction",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction"
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR96",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "fonctionR96",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J108-EnsembleFonction-RASS/FHIR/JDV-J108-EnsembleFonction-RASS",
+          "description": "Ensemble des fonctions et rôles du professionel au sein de la stucture d'exercice"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR96.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Autres fonctions du domaine sanitaire",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR85",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "fonctionR85",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J108-EnsembleFonction-RASS/FHIR/JDV-J108-EnsembleFonction-RASS",
+          "description": "Ensemble des fonctions et rôles du RASS, https://mos.esante.gouv.fr/NOS/JDV_J108-EnsembleFonction-RASS/FHIR/JDV-J108-EnsembleFonction-RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:fonctionR85.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Rôle dans la prise en charge des patients ou des usagers",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"
+      },
+      {
+        "id": "PractitionerRole.code.coding:metierPharmacienR06",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "metierPharmacienR06",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J73-MetierPharmacien-RASS/FHIR/JDV-J73-MetierPharmacien-RASS",
+          "description": "Ensemble des sections et sous-sections du tableau du CNOP dans le RASS, https://mos.esante.gouv.fr/NOS/JDV_J73-MetierPharmacien-RASS/FHIR/JDV-J73-MetierPharmacien-RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:metierPharmacienR06.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP"
+      },
+      {
+        "id": "PractitionerRole.code.coding:metierPharmacienG05",
+        "path": "PractitionerRole.code.coding",
+        "sliceName": "metierPharmacienG05",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J73-MetierPharmacien-RASS/FHIR/JDV-J73-MetierPharmacien-RASS",
+          "description": "Ensemble des sections et sous-sections du tableau du CNOP dans le RASS, https://mos.esante.gouv.fr/NOS/JDV_J73-MetierPharmacien-RASS/FHIR/JDV-J73-MetierPharmacien-RASS"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding:metierPharmacienG05.system",
+        "path": "PractitionerRole.code.coding.system",
+        "short": "Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens.",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP"
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "description": "Slicing pour séparer savoir-faire et attribution particulière",
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/CodeableConcept-Timed"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.specialty:attributionParticuliere",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "attributionParticuliere",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "PractitionerRole.specialty:attributionParticuliere.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R03-AttributionParticuliere/FHIR/TRE-R03-AttributionParticuliere"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR38",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR38",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR38.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Spécialité ordinale.",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR39",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR39",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR39.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Compétence acquise par le professionnel",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR40",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR40",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR40.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Compétence exclusive.",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR42",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR42",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR42.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Diplôme d'études spécialisées complémentaires (DESC)",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR43",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR43",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR43.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Capacité (savoir-faire)",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR44",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR44",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR44.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Qualification de praticien adjoint contractuel",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR45",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR45",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR45.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Fonction qualifiée.",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R45-FonctionQualifiee/FHIR/TRE-R45-FonctionQualifiee"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR97",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireR97",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireR97.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Droit d'exercice complémentaire.",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl"
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireG13",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "savoirFaireG13",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J107-EnsembleSavoirFaire-RASS/FHIR/JDV-J107-EnsembleSavoirFaire-RASS",
+          "description": "Ensemble des savoir-faire et compétences du RASS,"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:savoirFaireG13.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Orientation particulière",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere"
+      },
+      {
+        "id": "PractitionerRole.specialty:typeSavoirFaire",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "typeSavoirFaire",
+        "min": 0,
+        "max": "*",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J91-TypeSavoirFaire-RASS/FHIR/JDV-J91-TypeSavoirFaire-RASS",
+          "description": "Le type de savoir-faire (qualifications/autres attributions)"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:typeSavoirFaire.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "short": "Type savoir faire",
+        "min": 1,
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire"
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/AS-Location"
+            ],
+            "aggregation": [
+              "contained"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.telecom",
+        "path": "PractitionerRole.telecom",
+        "max": "0",
+        "type": [
+          {
+            "code": "ContactPoint",
+            "profile": [
+              "http://interopsante.org/fhir/StructureDefinition/FrContactPoint"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availabilityExceptions",
+        "path": "PractitionerRole.availabilityExceptions",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "max": "0"
+      }
+    ]
+  }
+}

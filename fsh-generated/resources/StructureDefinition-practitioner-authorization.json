@@ -1,10 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "practitioner-authorization",
-  "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-authorization",
-  "version": "0.1.0",
+  "id": "Practitioner-Authorization",
+  "meta": {
+    "lastUpdated": "2022-07-25T17:28:43.7645544+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Practitioner-Authorization",
+  "version": "0.3",
   "name": "PractitionerAuthorization",
-  "status": "active",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
   "description": "Autorisation d'exercice",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -64,6 +73,11 @@
         }
       },
       {
+        "id": "Extension.extension:type.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R17-TypeAutorisation/FHIR/TRE-R17-TypeAutorisation"
+      },
+      {
         "id": "Extension.extension:period",
         "path": "Extension.extension",
         "sliceName": "period",
@@ -88,6 +102,16 @@
             "code": "Period"
           }
         ]
+      },
+      {
+        "id": "Extension.extension:period.value[x].start",
+        "path": "Extension.extension.value[x].start",
+        "short": "Date effet autorisation"
+      },
+      {
+        "id": "Extension.extension:period.value[x].end",
+        "path": "Extension.extension.value[x].end",
+        "short": "Date fin autorisation"
       },
       {
         "id": "Extension.extension:field",
@@ -117,8 +141,13 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J76-DisciplineAutorisation-RASS/FHIR/JDV-J76-DisciplineAutorisation-RASS",
-          "description": "Discipline à laquelle l'autorisation d'exercice est restreinte dans le RASS;http://mos.asipsante.fr/NOS/TABS/JDV_J76-DisciplineAutorisation-RASS.tabs"
+          "description": "Discipline à laquelle l'autorisation d'exercice est restreinte dans le RASS"
         }
+      },
+      {
+        "id": "Extension.extension:field.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R18-DisciplineAutorisation/FHIR/TRE-R18-DisciplineAutorisation"
       },
       {
         "id": "Extension.extension:profession",
@@ -148,13 +177,18 @@
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS",
-          "description": "Ensemble des professions du RASS; https://mos.esante.gouv.fr/NOS/JDV_J106-EnsembleProfession-RASS/FHIR/JDV-J106-EnsembleProfession-RASS"
+          "description": "Profession pour laquelle l'autorisation est délivrée"
         }
+      },
+      {
+        "id": "Extension.extension:profession.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante/"
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-authorization"
+        "fixedUri": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Practitioner-Authorization"
       },
       {
         "id": "Extension.value[x]",

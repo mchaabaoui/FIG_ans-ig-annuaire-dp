@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AS-Location",
+  "meta": {
+    "lastUpdated": "2022-07-08T13:11:25.3167142+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/AS-Location",
+  "version": "0.3",
+  "name": "ASLocation",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
+  "description": "Profil créé à partir de la ressource Location dans le cadre de l'annuaire santé - Location contained dans le profil Situation d'exercice de PractitionerRole -  contient l'adresse d'activité du professionnel.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Fr-Address-Extended"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

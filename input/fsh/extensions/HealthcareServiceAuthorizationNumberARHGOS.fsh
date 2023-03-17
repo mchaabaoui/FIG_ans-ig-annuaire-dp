@@ -1,9 +1,11 @@
 Extension: HealthcareServiceAuthorizationNumberARHGOS
-Id: healthcare-service-authorization-number-arhgos
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-authorizationNumberARHGOS"
-
+Id: HealthcareService-AuthorizationNumberARHGOS
+* ^meta.lastUpdated = "2022-07-25T17:34:00.7673353+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "HealthcareService"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/HealthcareService-authorizationNumberARHGOS" (exactly)
+* . ^short = "Numéro autorisation ARGHOS"
 * value[x] only string

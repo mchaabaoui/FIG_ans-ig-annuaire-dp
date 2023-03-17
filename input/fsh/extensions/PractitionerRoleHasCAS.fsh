@@ -1,10 +1,11 @@
 Extension: PractitionerRoleHasCAS
-Id: practitioner-role-has-cas
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS"
-
+Id: PractitionerRole-HasCAS
+* ^meta.lastUpdated = "2022-07-08T13:19:10.1242412+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitionerRole-hasCAS" (exactly)
-
+* . ^short = "Option pratique tarifaire maîtrisée"
 * value[x] only boolean

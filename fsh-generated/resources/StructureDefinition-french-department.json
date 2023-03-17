@@ -1,10 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "french-department",
-  "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department",
-  "version": "0.1.0",
+  "id": "French-Department",
+  "meta": {
+    "lastUpdated": "2022-07-25T17:39:24.3766484+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/French-Department",
+  "version": "0.3",
   "name": "FrenchDepartment",
-  "status": "active",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
   "description": "Département français",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -44,32 +53,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/french-department"
+        "fixedUri": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/French-Department"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://mos.esante.gouv.fr/NOS/JDV_J84-DepartementOM-RASS/FHIR/JDV-J84-DepartementOM-RASS",

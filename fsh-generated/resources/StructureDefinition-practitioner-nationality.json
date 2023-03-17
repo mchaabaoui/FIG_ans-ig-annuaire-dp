@@ -1,10 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "practitioner-nationality",
-  "url": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-nationality",
-  "version": "0.1.0",
+  "id": "Practitioner-Nationality",
+  "meta": {
+    "lastUpdated": "2022-07-25T17:25:24.6900037+00:00"
+  },
+  "url": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Practitioner-Nationality",
+  "version": "0.3",
   "name": "PractitionerNationality",
-  "status": "active",
+  "status": "draft",
+  "publisher": "ANS",
+  "contact": [
+    {
+      "name": "monserviceclient.annuaire@esante.gouv.fr"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +39,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Nationalité du professionnel",
-        "definition": "Nationalité du professionnel",
-        "isModifier": false
+        "definition": "Nationalité du professionnel"
       },
       {
         "id": "Extension.extension:code",
@@ -40,8 +48,7 @@
         "short": "Code nationalité professionnel",
         "definition": "Code nationalité professionnel",
         "min": 0,
-        "max": "1",
-        "isModifier": false
+        "max": "1"
       },
       {
         "id": "Extension.extension:code.extension",
@@ -55,6 +62,16 @@
       },
       {
         "id": "Extension.extension:code.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -68,9 +85,15 @@
         }
       },
       {
+        "id": "Extension.extension:code.value[x].coding.system",
+        "path": "Extension.extension.value[x].coding.system",
+        "fixedUri": "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays"
+      },
+      {
         "id": "Extension.extension:period",
         "path": "Extension.extension",
         "sliceName": "period",
+        "short": "date d’acquisition de la nationalité française",
         "min": 0,
         "max": "1"
       },
@@ -86,6 +109,16 @@
       },
       {
         "id": "Extension.extension:period.value[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
+          }
+        ],
         "path": "Extension.extension.value[x]",
         "type": [
           {
@@ -96,7 +129,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-nationality"
+        "fixedUri": "http://interop.esante.gouv.fr/ig/fhir/as03/StructureDefinition/Practitioner-Nationality"
       },
       {
         "id": "Extension.value[x]",

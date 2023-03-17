@@ -1,12 +1,15 @@
 Extension: PractitionerDeceasedDateTime
-Id: practitioner-deceased-date-time
+Id: Practitioner-DeceasedDateTime
 Description: "Date of death of the practitioner if applicable."
-* ^url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-deceasedDateTime"
-
+* ^meta.lastUpdated = "2022-07-25T17:25:57.5901528+00:00"
+* ^version = "0.3"
+* ^status = #draft
+* ^publisher = "ANS"
+* ^contact.name = "monserviceclient.annuaire@esante.gouv.fr"
 * ^context.type = #element
 * ^context.expression = "Practitioner"
-
-* url = "https://apifhir.annuaire.sante.fr/ws-sync/exposed/structuredefinition/practitioner-deceasedDateTime" (exactly)
-
+* value[x] ^slicing.discriminator.type = #type
+* value[x] ^slicing.discriminator.path = "$this"
+* value[x] ^slicing.rules = #open
 * valueDateTime only dateTime
 * valueDateTime ^sliceName = "valueDateTime"

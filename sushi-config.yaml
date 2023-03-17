@@ -1,59 +1,51 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.annuaire
-canonical: http://interop.esante.gouv.fr/ci-sis/fhir/annuaire
-name: Annuaire Implementation Guide
-title: Implementation Guide de l'annuaire de l'ANS
-publisher:
+id: ans.fhir.fr.as03
+canonical: http://interop.esante.gouv.fr/ig/fhir/as03
+name: AS DP 0.3
+title: "AS DP 0.3"
+description: Ressources de conformité basé sur le modèle de l'Annuaire Santé (AS) 1.0 d'exposition des données publiques (DP)
+publisher: 
   name: ANS
   url: https://esante.gouv.fr
   email: monserviceclient.annuaire@esante.gouv.fr
-  
-status: active
-version: 0.1.0
-fhirVersion: 4.0.1
-copyrightYear: 2020+
-releaseLabel: ci-build
-
 dependencies:
-    hl7.fhir.fr.core: 1.1.0
+  hl7.fhir.fr.core: 1.1.0
+status: active
+date : 2023-03-14
+version: "0.1.0"
+fhirVersion: 4.0.1
+copyrightYear: 2023+
+releaseLabel: ci-build
 
 parameters:
     shownav: 'true'
 
+
+
 pages:
     index.md:
-        title: Accueil
+       title: Accueil
+    specifications_fonctionnelles.md:
     specifications_techniques.md:
-        construction_des_flux.md:
-        st_flux1.md:
-            title: Flux 01
-        st_flux2.md:
-            title: Flux 02
-    # specifications_fonctionnelles.md:
-    #     sf_ajout.md:
-    #         title: Fonctionnalité 1
-    autres_ressources.md:
-        title: Autres Ressources
+    downloads.md:
+        title: Téléchargements et usages
         securite.md:
-            title: Sécurité
-        downloads.md:
-            title: Téléchargements et usages
+                title: Sécurité
+    autres_ressources.md:
+            title: Autres Ressources
     about.md:
         title: A propos de ce guide
 
 menu:
     Accueil: index.html
-    Description des flux:
-        Construction des flux: construction_des_flux.html
-        Flux 01: st_flux1.html
-        Flux 02: st_flux2.html
-    # Spécifications fonctionnelles:
-    #     Spécifications fonctionnelles: specifications_fonctionnelles.html
-    #     Fonctionnalité 1: sf_ajout.html
+    Spécifications fonctionnelles: specifications_fonctionnelles.html
+    Spécifications techniques: specifications_techniques.html
     Ressources de conformance: artifacts.html
+    Téléchargements et usage: 
+        Téléchargements: downloads.html
+        Sécurité: securite.html
     Autres ressources:
-        Téléchargements et usage: downloads.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     A propos de ce guide: about.html
