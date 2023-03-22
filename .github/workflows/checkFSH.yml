@@ -1,20 +1,11 @@
-name: sushi
+name: Workflow Init
 
-on: [push]
+on:
+  workflow_call:
+  push:
+      
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
-  lint:
-    name: Check sushi
-    runs-on: ubuntu-20.04
-
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Install modules
-        run: npm install -g fsh-sushi
-      - name: Install packages
-        run: fhir install hl7.fhir.fr.core 1.1.0
-      - name: Run sushi
-        run: sushi .
+  Call-Fhir-Workflows :
+    uses: ansforge/FIG_ans.workflows/.github/workflows/fhir-worklows.yml@main
